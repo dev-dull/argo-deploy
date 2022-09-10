@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/dev-dull/argo-deploy.git
     targetRevision: HEAD
-    path: kustomizations/dev
+    path: kustomizations/dev/nginx
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-apps

@@ -1,2 +1,4 @@
 bases:
   - ../../../nginx/
+patches:
+  - replicas.yaml
