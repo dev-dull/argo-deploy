@@ -11,7 +11,7 @@ spec:
     path: storage
   destination:
     server: https://kubernetes.default.svc
-    namespace: nginx-dev
+    namespace: default_storage
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
