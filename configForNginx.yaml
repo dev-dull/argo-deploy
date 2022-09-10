@@ -22,7 +22,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-dev
+  name: nginx-prod
   namespace: argocd
 spec:
   project: default
