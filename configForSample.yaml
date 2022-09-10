@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sample
+  name: nginx-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/dev-dull/argo-deploy.git
     targetRevision: HEAD
-    path: sample
+    path: kustomizations/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: argo-apps
