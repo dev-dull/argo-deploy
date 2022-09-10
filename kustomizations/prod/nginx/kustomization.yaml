@@ -1,4 +1,5 @@
 bases:
   - ../../../nginx/
 patches:
+  - namespace.yaml
   - replicas.yaml
