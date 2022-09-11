@@ -4,3 +4,13 @@ metadata:
   name: my-nginx
 spec:
   replicas: 1
+    spec:
+      containers:
+      - name: my-nginx
+        volumeMounts:
+          mountPath: /var/www/html
+          name: pod-claim
+  volumes:
+  - name: pod-claim
+    persistentVolumeClaim:
+      claimName: my-nginx-pvc
