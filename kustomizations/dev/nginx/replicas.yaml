@@ -11,7 +11,7 @@ spec:
         volumeMounts:
         - mountPath: /var/www/html
           name: pod-claim
-  volumes:
-  - name: pod-claim
-    persistentVolumeClaim:
-      claimName: my-nginx-pvc
+    volumes:
+    - name: pod-claim
+      persistentVolumeClaim:
+        claimName: my-nginx-pvc
