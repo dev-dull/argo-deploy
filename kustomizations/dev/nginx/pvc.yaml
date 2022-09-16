@@ -4,8 +4,8 @@ metadata:
   name: my-nginx-pvc
 spec:
   accessModes:
-  - ReadWriteOnce
+  - ReadWriteMany
   resources:
     requests:
       storage: 10Gi
-  storageClassName: truenas-nfs
+  storageClassName: nfs-client

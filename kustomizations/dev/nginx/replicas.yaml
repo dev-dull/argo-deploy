@@ -9,7 +9,7 @@ spec:
       containers:
       - name: my-nginx
         volumeMounts:
-        - mountPath: /var/www/html
+        - mountPath: /usr/share/nginx/html
           name: pod-claim
       volumes:
       - name: pod-claim

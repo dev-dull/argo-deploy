@@ -4,8 +4,7 @@ metadata:
   name: truenas-nfs
   annotations:
     storageclass.kubernetes.io/is-default-class: "true"
-provisioner: example.com/external-nfs
+provisioner: k8s-sigs.io/nfs-subdir-external-provisioner
 parameters:
-  server: 192.168.1.2
-  path: /k8s_data
-  readOnly: "false"
+  pathPattern: "192.168.11.10/mnt/TANK/fileserver/k8s_data" # waits for nfs.io/storage-path annotation, if not specified will accept as empty string.
+  onDelete: delete
