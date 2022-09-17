@@ -12,9 +12,9 @@ spec:
         - mountPath: /usr/share/nginx/html
           name: nginx-home
       volumes:
-      - name: pod-claim
-        persistentVolumeClaim:
-          claimName: my-nginx-pvc
+      # - name: pod-claim
+      #   persistentVolumeClaim:
+      #     claimName: my-nginx-pvc
       - name: nginx-home
         nfs:
           server: 192.168.11.10
