@@ -6,5 +6,5 @@ metadata:
     storageclass.kubernetes.io/is-default-class: "true"
 provisioner: k8s-sigs.io/nfs-subdir-external-provisioner
 parameters:
-  pathPattern: "192.168.11.10/mnt/TANK/fileserver/k8s_data" # waits for nfs.io/storage-path annotation, if not specified will accept as empty string.
+  pathPattern: "192.168.11.10/mnt/TANK/fileserver/k8s_data"
   onDelete: delete
