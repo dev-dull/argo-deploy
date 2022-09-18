@@ -1,5 +1,5 @@
 bases:
-  - ../../../nginx/
+  - ../../../base/nginx/
   - pvc.yaml
 patches:
   - replicas.yaml
