@@ -16,5 +16,5 @@ spec:
       #   persistentVolumeClaim:
       #     claimName: my-nginx-pvc
       - name: nginx-home
-        persistantVolumeClaim:
+        persistentVolumeClaim:
           claimName: my-nginx-pvc
