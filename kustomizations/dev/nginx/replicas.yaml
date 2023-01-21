@@ -16,6 +16,5 @@ spec:
       #   persistentVolumeClaim:
       #     claimName: my-nginx-pvc
       - name: nginx-home
-        nfs:
-          server: 192.168.11.10
-          path: /mnt/TANK/fileserver/k8s_data/nginx
+        persistantVolumeClaim:
+          claimName: my-nginx-pvc
