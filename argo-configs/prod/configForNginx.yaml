@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-nginx-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/dev-dull/argo-deploy.git
+    targetRevision: HEAD
+    path: prod/nginx
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: my-nginx-prod
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
